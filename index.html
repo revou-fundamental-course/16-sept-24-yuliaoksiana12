@@ -4,6 +4,160 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css\styles.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header class="main-header">
+      <!-- Logo -->
+      <div class="logo-icon"></div>
+
+      <!-- Navigation -->
+      <nav>
+        <a href="#section-home">Home</a>
+        <a href="#section-our-profile">Our Profile</a>
+        <a href="#section-portfolio">Portfolio</a>
+        <a href="#section-message-us">Message Us</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <!-- Home -->
+      <section id="section-home">
+        <header>
+          <h1 class="inline">
+            Hi
+            <h1 class="inline" id="user-name">Good People</h1>
+            , Welcome to My Website
+          </h1>
+        </header>
+
+        <article>
+          <p>This website contains information about our company. Let’s delve deeper.</p>
+
+          <!-- Photo Banner -->
+          <!-- <div class="photo-banner"></div> -->
+          <div class="photo-banner photo-1"></div>
+          <!-- <div class="photo-banner photo-2"></div>
+          <div class="photo-banner photo-3"></div> -->
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- Our Profile -->
+      <section id="section-our-profile">
+        <header>
+          <h1>Our Profile</h1>
+            <div class="row">
+              <div class="menu-card">
+                <img src="assets\bg.jpg" alt="company" class="menu-card-img" />
+              </div>
+              <p>
+                Selamat datang di kamii, di mana inovasi dan dedikasi bertemu untuk menciptakan solusi yang mengubah cara Anda berinteraksi dengan dunia. Didirikan pada tahun [tahun pendirian], kami berkomitmen untuk memberikan layanan berkualitas tinggi dan produk yang memenuhi kebutuhan pelanggan kami.
+                <br>Visi kami adalah menjadi pemimpin dalam industri [sebutkan industri] dengan berfokus pada inovasi berkelanjutan, keberlanjutan, dan tanggung jawab sosial. Kami berusaha untuk membangun hubungan jangka panjang dengan pelanggan kami, mitra, dan komunitas di sekitar kami.</p>
+              </p>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Portfolio -->
+      <section id="section-portfolio">
+        <header>
+          <h1>Portfolio</h1>
+          <div class="row">
+            <div class="porto-card">
+              <img src="assets/pict1.jpg" alt="project 1" class="menu-card-img" />
+              <h3 class="menu-card-title">project 1 </h3>
+            </div>
+            <div class="porto-card">
+              <img
+                src="assets/pict2.jpg"
+                alt="project 2"
+                class="menu-card-img"
+              />
+              <h3 class="porto-card-title">project 2</h3>
+            </div>
+            <div class="porto-card">
+              <img src="assets/pict5.jpg" alt="project3" class="menu-card-img" />
+              <h3 class="menu-card-title">Project 3</h3>
+            </div>
+          </div>
+        </section>
+        </header>
+      </section>
+
+      <hr />
+
+      <!-- Message Us -->
+      <section id="section-message-us">
+        <header>
+          <h1>Message Us</h1>
+        </header>
+
+        <section class="form-container">
+          <!-- Form -->
+          <form onsubmit="return false;">
+              <div>
+                  <label for="input-message">Message:</label>
+                  <input type="text" id="input-message" />
+              </div>
+
+              <button type="submit" onclick="validateForm()">Submit</button>
+          </form>
+
+          <!-- Result Form -->
+          <div>
+            <p>Result Form: <span id="result-form"></span></p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social">
+        <a href=""
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href=""
+          ><i data-feather="twitter"></i
+        ></a>
+        <a href="#"><i data-feather="linkedin"></i></a>
+      </div>
+
+      <div class="links">
+          <a href="#section-home">Home</a>
+          <a href="#section-our-profile">Our Profile</a>
+          <a href="#section-portfolio">Portfolio</a>
+          <a href="#section-message-us">Message Us</a>
+      </div>
+
+      <div class="credit">
+        <a href=""></a>
+        <p>Created by <a href="">yuliaoksiana</a> | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+
+    <script src="js\script.js"></script>
+  </body>
 </html>

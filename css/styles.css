@@ -1,1 +1,201 @@
-/* ini css */
+/* Ini CSS */
+body {
+  background-color: rgb(240, 240, 166);
+  font-family: "Popins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inline {
+  display: inline;
+}
+
+nav {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav > a {
+  border: 1px solid;
+  padding: 8px;
+  color: rgb(64, 63, 49);
+  padding: 5px 10px;
+  border: 2px solid rgb(223, 170, 37);
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  color: blue;
+  border-color: blue;
+}
+
+.logo-icon {
+  height: 50px;
+  width: 50px;
+  background-image: url(../assets/log.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.photo-banner {
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  width: 1500px;
+  background-image: url(../assets/header.png);
+}
+
+/* .photo-banner .photo-1 {
+  background-image: url(..\assets\header.png);
+}
+
+.photo-banner .photo-2 {
+  background-image: url(assets\header.png);
+}
+
+.photo-3 {
+  background-image: url(../assets/3.png);
+} */
+
+.row {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: left;
+  width: 60%;
+  margin-top: 0.5rem;
+}
+
+.row .porto-card {
+  text-align: center;
+}
+
+.row .porto-card img {
+  border-radius: 5%;
+  width: 80%;
+  margin-top: 0.5rem;
+}
+
+.row .porto-card .porto-card-title {
+  margin-top: 1rem auto 0.5rem;
+}
+
+.profile-icon {
+  height: 50px;
+  width: 50px;
+  background-image: url(..\assets\logo.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.profile-icon-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-icon-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+footer .social {
+  padding: 1rem 0;
+}
+
+footer .social a {
+  color: #010101;
+  margin: 1rem;
+}
+
+footer .social a:hover {
+  color: #c66c6c;
+}
+
+footer .links a {
+  color: #010101;
+  margin: 0.7rem;
+}
+
+footer .links a:hover {
+  color: #c66c6c;
+}
+
+footer .credit a {
+  color: #c66c6c;
+  margin: 0.1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* max-width akan menerapkan style di bawah ukuran yang di tentukan
+min-width akan menerapkan style di atas ukuran yang di tentukan */
+@media only screen and (max-width: 375px) {
+  .main-header {
+    flex-direction: column;
+  }
+}
